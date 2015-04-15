@@ -1,0 +1,336 @@
+/*------------------------------------------------------------------------------
+ *	COMMON
+------------------------------------------------------------------------------*/
+	.left { float: left; }
+	.right { float: right; }
+
+/*------------------------------------------------------------------------------
+ *	MAIN CONTAINERS
+------------------------------------------------------------------------------*/
+	html {
+		overflow-y: scroll !important;
+		/* overflow-x: hidden; */
+		overflow-x: scroll !important;
+	}
+
+	body {
+		color: #4E5150;
+		/*font-family: Tahoma;*/
+		font-family: Andika !important;
+		font-size: 14px;
+		line-height: 1.4em;
+		/*overflow-x: hidden;*/
+		/*background:  url( "../images/bgr.jpg" );*/
+
+
+/*		background:*/
+/*radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),*/
+/*radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;*/
+/*background-color: slategray;*/
+/*background-size:30px 20px;*/
+	}
+
+	#wrapper {
+		/*width: 100%;*/
+		margin: 0 auto;
+		width: 960px;
+		/*min-width: 77%;*/
+		/*z-index: 999;*/
+	}
+
+	#gradient{
+			background: #87e0fd;
+			background: -moz-radial-gradient(center, ellipse cover,  #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
+			background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#87e0fd), color-stop(40%,#53cbf1), color-stop(100%,#05abe0));
+			background: -webkit-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
+			background: -o-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
+			background: -ms-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
+			background: radial-gradient(ellipse at center,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=1 );
+
+			width: 650px;
+			height: 650px;
+			position: absolute;
+			right: -200px;
+			top: -350px;
+			 	-webkit-transform: rotate(45deg);
+				   -moz-transform: rotate(45deg);
+					-ms-transform: rotate(45deg);
+					 -o-transform: rotate(45deg);
+						   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+							 zoom: 1;
+			border-radius: 0 0 190px 0;
+			/*border: 10px dotted #fff;*/
+			/*outline: 20px dotted #2CBBE8;*/
+			/*transform: perspective( 600px ) rotateX( 150deg );*/
+	}
+
+/*
+	#gradient span.b1,
+	#gradient span.b2 {
+		display: block;
+		width: 95%;
+		height: 95%;
+		border: 20px dotted #fff;
+		border-left: 0;
+		border-top: 0;
+		position: absolute;
+		bottom: -9px;
+
+	}
+	#gradient span.b2 {
+		width: 100%;
+		height: 100%;
+		border: 20px dotted #2CBBE8;
+		border-left: 0;
+		border-top: 0;
+		position: absolute;
+		left: -20px;
+		bottom: -17px;
+	}
+*/
+
+
+/*------------------------------------------------------------------------------
+ *	HEADER
+------------------------------------------------------------------------------*/
+	.contacts {
+		padding: 10px 0;
+	}
+
+	#page-header {
+		clear: both;
+		margin: 2.7em 0;
+		position: relative;
+		border-bottom: 1px solid #b5b5b5;
+		background: #1da9d8;
+		padding: 20px;
+	}
+
+	#logo {
+	}
+
+	#logo > a {
+	}
+
+	#logo > img {
+	}
+
+	#page-header .logo {
+		font-family: "Conv_CALIBRI", Sans-Serif;
+	}
+
+	#page-header {
+		color: #086bb8;
+		color: #a4dff2;
+	}
+
+	#page-header à {
+
+	}
+
+	.sublogo {
+		color: #0bc8de;
+	}
+
+	.checked {
+		text-decoration: line-through;
+	}
+
+
+/*------------------------------------------------------------------------------
+ *	MENU
+------------------------------------------------------------------------------*/
+	#main-nav {
+		float: right;
+		margin-top: 5px;
+	}
+	#main-nav ul, #main-nav ul ul {
+		/*display: none;*/
+	}
+
+	#main-nav {
+	}
+
+	#main-nav li {
+		/*display: inline;*/
+	}
+
+	#main-nav li a {
+		color: #105b74;
+		text-decoration: none;
+	}
+
+	#main-nav > li > a:hover {
+	}
+
+	#main-nav li a.active:hover {
+
+	}
+
+	#main-nav li a:active {
+
+	}
+
+	#main-nav li a.active {
+	}
+
+
+/*------------------------------------------------------------------------------
+ *	CONTENT
+------------------------------------------------------------------------------*/
+
+	strong.important {
+		/*color: #086BB8;*/
+		text-decoration: underline;
+	}
+
+	#page-content {
+	}
+
+	#page-content .column {
+		width: 29%;
+		float: left;
+		margin-right: 2%;
+		padding-bottom: 20px;
+		padding: 1%;
+	}
+
+	#page-content .paragraph {
+		clear: left;
+		padding-bottom: 20px;
+	}
+
+	#page-content .logo {
+		color: #086bb8;
+		font-size: 0.9em;
+	}
+
+	#page-content .sublogo {
+		color: #1f95f5;
+		/*color: #1a7e9f;*/
+	}
+
+	#page-content .label {
+		display: inline-block;
+		/*width: 150px;*/
+		padding-right: 10px;
+		text-align: right;
+	}
+
+	#page-content p {
+
+	}
+
+	#page-content h1 {
+	}
+
+	#page-content h2 {
+		color: #373737;
+		margin: 10px -1%;
+
+		/*background: #b6f4fc;*/
+		font-size: 1.2em;
+		font-weight: normal;
+		padding: 4px;
+		border-bottom: 3px solid #000;
+		border-radius: 7px;
+	}
+
+	#page-content .paragraph h2 {
+		display: inline;
+		border: 0;
+		border-bottom: 3px solid #000;
+	}
+
+	#page-content h3 {
+	}
+
+	#page-content h4 {
+	}
+
+	#page-content h5 {
+	}
+
+	#page-content h6 {
+	}
+
+	#page-content h7 {
+	}
+
+	#page-content img.left {
+		margin: 1.5em 1.5em 1.5em 0pt;
+	}
+
+	#page-content img.right {
+		margin: 1.5em 0pt 1.5em 1.5em;
+	}
+
+	#page-content img.thumb {
+		width: 100%;
+	}
+	
+	/* Full Calendar tooltip */
+	div.tooltipevent {
+		width:120px;
+		background:#1DA9D8;
+		color: #fff;
+		position:absolute;
+		z-index:10001;
+		padding:10px
+	}
+/*------------------------------------------------------------------------------
+ *	FOOTER
+------------------------------------------------------------------------------*/
+	#page-footer {
+	}
+
+
+
+/*------------------------------------------------------------------------------
+ *	non-semantic helper classes
+------------------------------------------------------------------------------*/
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/*------------------------------------------------------------------------------
+ *	media queries
+------------------------------------------------------------------------------*/
+/*@media screen and (orientation:portrait) {}*/
+
+	@media all and (min-width:1280px){
+		#wrapper {
+			/*width: 1200px;*/
+			/*min-width: 1200px;*/
+			/*font-size: 14px;*/
+		}
+	}
+
+	@media all and (max-width:320px){
+		#wrapper {
+			width: 320px;
+			min-width: 320px;
+			margin: 0 5px;
+			font-size: 12px;
+		}
+
+		#main-nav {
+		}
+
+		#main-nav li a {
+		}
+	}
+
+	@media only screen and (min-width: 480px) {
+	}
+
+	@media only screen and (min-width: 768px) {
+	}

@@ -1,0 +1,76 @@
+/*------------------------------------------------------------------------------
+ *	FORMS
+------------------------------------------------------------------------------*/
+	form.form {
+		margin-top: 30px;
+	}
+
+	::-webkit-input-placeholder {
+		color: #c1c1c1;
+	}
+
+	:-moz-placeholder {
+		color: #c1c1c1;
+	}
+
+	.loading {
+		 background: url("../images/site/loader.gif") no-repeat scroll center center transparent;
+		 min-height: 100px;
+	}
+
+	.form .notice {
+		font-size: 0.8em;
+	}
+
+	.form .error {
+		color: #CE3C23;
+		/*background: #fff;*/
+	}
+
+	.form label {
+
+		/*width: 100px;*/
+		display: block;
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+
+	.form .input {
+		display: block;
+		border: 1px solid #D6D6D6;
+		border-left: 1px solid #D6D6D6;
+		padding: 1%;
+		width: 98%;
+	}
+
+	.form .wide {
+		width: 100%;
+	}
+
+	.form .button {
+		display: block;
+		width: auto;
+		background: #0092DF;
+		/*background: #253A96;*/
+		/*background: #004E92;*/
+		border: 1px solid #1F5687;
+		color: #fff;
+		cursor: pointer;
+		margin: 1em 0;
+		padding: 0.2em 1em;
+		font-size: 1.1em;
+		text-decoration: none;
+		text-transform: lowercase;
+	}
+
+	.form :focus{
+		border: 1px solid #C9FFFD;
+			   -moz-box-shadow: 0px 0px 3px 1px #C9FFFD;
+			-webkit-box-shadow: 0px 0px 3px 1px #C9FFFD;
+					box-shadow: 0px 0px 3px 1px #C9FFFD;
+	}
+
+	.form .button:active {
+		background: #fff;
+		color: #004E92;
+	}
