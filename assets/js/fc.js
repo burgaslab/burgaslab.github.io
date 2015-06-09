@@ -30,9 +30,13 @@ $(document).ready(function () {
             $('.tooltipevent').remove();
         },
         eventClick: function (calEvent, jsEvent, view) {
-
-            // location.href = calEvent.link;
-
+			jsEvent.preventDefault();
+			if(calEvent.description && calEvent.description.lastIndexOf('http', 0) === 0) {
+				window.open(calEvent.description, '_blank');
+			}
+			else{
+				window.open(calEvent.url, '_blank');
+			}
         }
     });
 
