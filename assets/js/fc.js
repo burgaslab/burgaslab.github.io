@@ -8,6 +8,8 @@ $(document).ready(function () {
 
     $('#fcBurgasLab').fullCalendar({
 	//	lang: 'bg',
+		height: 'auto',
+		contentHeight: 'auto',
         googleCalendarApiKey: 'AIzaSyA_oNPwTyszWp-Nzqvx5FYmgT3mhdkahxo',
 		eventSources: [
             {
