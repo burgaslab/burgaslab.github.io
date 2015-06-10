@@ -9,14 +9,30 @@ $(document).ready(function () {
     $('#fcBurgasLab').fullCalendar({
 	//	lang: 'bg',
         googleCalendarApiKey: 'AIzaSyA_oNPwTyszWp-Nzqvx5FYmgT3mhdkahxo',
-        events: {
-            googleCalendarId: 'burgaslab@gmail.com'		//,
-			// className: 'nice-event'
-        },
+       // events: {
+        //    googleCalendarId: 'burgaslab@gmail.com'		//,
+		//	// className: 'nice-event'
+        //},
+		eventSources: [
+            {
+                googleCalendarId: 'burgaslab@gmail.com',
+				className: 'lab-events'
+            },
+            {
+                googleCalendarId: 'oj49agjtjs2inkpg4ubalspvq0@group.calendar.google.com',
+                className: 'it-events'
+            }
+        ],
         eventMouseover: function (calEvent, jsEvent) {
-            var tooltip = '<div class="tooltipevent" style="">' + calEvent.title + '</div>';
+			var css = '';
+			if(calEvent.source && calEvent.source.className && calEvent.source.className.length > 0) {
+				css = calEvent.source.className[0];
+			}
+			
+            var tooltip = '<div class="tooltipevent ' + css +'">' + calEvent.title + '</div>';
             $("body").append(tooltip);
-            $(this).mouseover(function (e) {
+            
+			$(this).mouseover(function (e) {
                 $(this).css('z-index', 10000);
                 $('.tooltipevent').fadeIn('500');
                 $('.tooltipevent').fadeTo('10', 1.9);
