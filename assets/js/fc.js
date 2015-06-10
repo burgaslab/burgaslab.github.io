@@ -9,10 +9,6 @@ $(document).ready(function () {
     $('#fcBurgasLab').fullCalendar({
 	//	lang: 'bg',
         googleCalendarApiKey: 'AIzaSyA_oNPwTyszWp-Nzqvx5FYmgT3mhdkahxo',
-       // events: {
-        //    googleCalendarId: 'burgaslab@gmail.com'		//,
-		//	// className: 'nice-event'
-        //},
 		eventSources: [
             {
                 googleCalendarId: 'burgaslab@gmail.com',
